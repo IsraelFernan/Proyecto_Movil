@@ -18,6 +18,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
             android:name=".Imagenes"
             android:exported="false" />
         <activity

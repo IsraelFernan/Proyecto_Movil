@@ -1,21 +1,36 @@
 package Model;
 
 public class Venta {
-    public int idproducto;
-    public int idventa;
-    public int total;
-    public String estado;
+    private int idcliente;
+    private int total;
+    private String estado;
 
-    public int getIdproducto(){
-        return idproducto;
+    public Venta(int idcliente, int total, String estado) {
+        this.idcliente = idcliente;
+        this.total = total;
+        this.estado = estado;
     }
-    public int getIdventa(){
-        return idventa;
+    public int getIdcliente() {
+        return idcliente;
     }
-    public int getTotal(){
+
+    public void setIdcliente(int idcliente) {
+        this.idcliente = idcliente;
+    }
+
+    public int getTotal() {
         return total;
     }
-    public String getEstado(){
+
+    public void setTotal(int total) {
+        this.total = total;
+    }
+
+    public String getEstado() {
         return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }

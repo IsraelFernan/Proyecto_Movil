@@ -1,24 +1,17 @@
 package fisei.uta.app_movil;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import com.bumptech.glide.load.model.Model;
-import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.List;
 import Model.Venta;
 import Model.Detalle;
-import Interfaces.ApiDetalle;
 import Interfaces.ApiProductos;
 import Model.ModeloAdaptador;
 import Model.Producto;
@@ -78,7 +71,7 @@ public class Imagenes extends AppCompatActivity implements AdapterView.OnItemCli
     }
 
     public void agregarVenta(int idcliente){
-        Venta venta = new Venta(idcliente,0,'ABIERTO');
+        Venta venta = new Venta(idcliente,0,"ABIERTO");
 
     }
 

@@ -20,12 +20,20 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity {
-    Button ingresar;
+    Button ingresar, registrarse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ingresar = findViewById(R.id.ingresar);
+        registrarse = findViewById(R.id.btnMainRegistrarse);
+        registrarse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,Registro.class);
+                startActivity(i);
+            }
+        });
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 
     public void verificarCliente(){
         Retrofit retrofit = new Retrofit.Builder()

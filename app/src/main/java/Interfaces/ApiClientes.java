@@ -2,7 +2,6 @@ package Interfaces;
 
 import java.util.List;
 import Model.Clientes;
-import Model.Producto;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -14,5 +13,5 @@ public interface ApiClientes {
     Call<List<Clientes>> obtenerDatos();
 
     @POST("Clientes")
-    Call<ResponseBody> insertarDatos(@Body Producto producto);
+    Call<ResponseBody> insertarDatos(@Body Clientes clientes);
 }
