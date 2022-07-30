@@ -1,11 +1,13 @@
 package Model;
 
 public class Venta {
+    private int idventa;
     private int idcliente;
-    private int total;
+    private float total;
     private String estado;
 
-    public Venta(int idcliente, int total, String estado) {
+    public Venta(int idventa,int idcliente, float total, String estado) {
+        this.idventa = idventa;
         this.idcliente = idcliente;
         this.total = total;
         this.estado = estado;
@@ -18,11 +20,11 @@ public class Venta {
         this.idcliente = idcliente;
     }
 
-    public int getTotal() {
+    public float getTotal() {
         return total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(float total) {
         this.total = total;
     }
 
@@ -32,5 +34,13 @@ public class Venta {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public int getIdventa() {
+        return idventa;
+    }
+
+    public void setIdventa(int idventa) {
+        this.idventa = idventa;
     }
 }

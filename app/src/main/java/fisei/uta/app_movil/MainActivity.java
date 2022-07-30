@@ -2,11 +2,9 @@ package fisei.uta.app_movil;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
@@ -73,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
                 if(j>0){
-                    Intent intent = new Intent(MainActivity.this, Imagenes.class);
+                    Intent intent = new Intent(MainActivity.this, Oferta.class);
                     intent.putExtra("idCliente",idCliente);
                     startActivity(intent);
                 }else{

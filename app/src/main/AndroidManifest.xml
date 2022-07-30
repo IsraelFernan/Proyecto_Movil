@@ -21,16 +21,10 @@
             android:name=".Registro"
             android:exported="false" />
         <activity
-            android:name=".Imagenes"
-            android:exported="false" />
-        <activity
-            android:name=".OfertaP"
+            android:name=".Oferta"
             android:exported="false" />
         <activity
             android:name=".Detalle"
-            android:exported="false" />
-        <activity
-            android:name=".Oferta"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
